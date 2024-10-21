@@ -1,0 +1,5 @@
+:uppercase s s.upper()
+uppercase "hello world"
+:concat s t "{} {}".format(s, t)
+concat "Hello" "World"
+quit "Functions: {}, Lines: {}"

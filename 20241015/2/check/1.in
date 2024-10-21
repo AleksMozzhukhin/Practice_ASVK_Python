@@ -1,0 +1,9 @@
+:hello "Hello, World!"
+hello
+:add x y x + y
+add 2 3
+:multiply a b c d a * b * c * d
+multiply 1 2 3 4
+:no_param 42
+no_param
+quit "Functions: {}, Lines: {}"
