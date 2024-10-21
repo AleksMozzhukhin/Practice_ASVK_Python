@@ -22,10 +22,18 @@ string_count = 0
 while s := input():
     string_count += 1
     if s[0] == ':':
-        tmp = s[1:].split()
-        functions[tmp[0]] = {
-            "params": tmp[1:-1],
-            "expression": tmp[-1]
+        tokens = s[1:].split()
+        params = []
+        i = 1
+        # собираем параметры, так как они только буквы
+        while i < len(tokens) and tokens[i].isalpha():
+            params.append(tokens[i])
+            i += 1
+        # всё что осталось, это выражение
+        expression = ' '.join(tokens[i:])
+        functions[tokens[0]] = {
+            'params': params,
+            'expression': expression
         }
     else:
         tmp = s.split()

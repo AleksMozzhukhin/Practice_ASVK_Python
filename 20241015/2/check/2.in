@@ -1,6 +1,4 @@
-:pi_value pi
-pi_value
-:double_pi pi 2 * pi
-double_pi
-sin pi
-quit "Functions: {}, Lines: {}"
+:quote s "'{}'".format(s)
+quote "Hello, world"
+quote "It's a test"
+quit "Funcs: {}, Lines: {}"
