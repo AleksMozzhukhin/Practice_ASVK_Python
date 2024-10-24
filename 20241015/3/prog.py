@@ -11,4 +11,4 @@ for i in text.split():
         else:
             words_by_entry[i] += 1
 max_words_count = max(words_by_entry.values())
-print(*[words for words, count in words_by_entry.items() if count == max_words_count])
+print(*[words for words in words_by_entry.keys() if words_by_entry[words] == max_words_count])

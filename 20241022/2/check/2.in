@@ -1,0 +1,1 @@
+itertools.islice(slide(itertools.count(), 3), 9)
