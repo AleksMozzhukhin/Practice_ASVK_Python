@@ -1,6 +1,10 @@
 def speed(path, stops, times):
-    cur_stop = 0
-    tmp = stops[cur_stop]
+    from itertools import tee
+
+    stops_dup = list(tee(stops, 2))
+    times = iter(times)
+    path = iter(path)
+    tmp = next(stops_dup[0])
     summ = 0
     for i in path:
         if tmp > 0:
@@ -8,14 +12,13 @@ def speed(path, stops, times):
             tmp -= 1
         else:
             try:
-                yield summ / times[cur_stop]
-                cur_stop += 1
-                tmp = stops[cur_stop % (len(stops))]-1
+                yield summ / next(times)
+                try:
+                    tmp = next(stops_dup[0]) - 1
+                except StopIteration:
+                    stops_dup = tee(stops_dup[1], 2)
+                    tmp = next(stops_dup[0]) - 1
                 summ = i
             except IndexError:
                 break
-
-    yield summ / times[cur_stop % (len(times))]
-
-
-print(*list(speed([2, 3, 4] * 11, [3, 4, 5], [1, 2, 4, 8] * 3)))
+    yield summ / next(times)
