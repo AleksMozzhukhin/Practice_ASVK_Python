@@ -6,3 +6,4 @@ print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip(("outer", "inner", 
 print(f"{inner < outer=}, {separate < outer=}, {empty < outer=}")
 print(f"{inner in outer=}, {separate in outer=}, {empty in outer=}, {outer in outer=}")
 print(f"{outer & inner=}, {inner & separate=}, {empty & outer=}, {empty & separate=}")
+

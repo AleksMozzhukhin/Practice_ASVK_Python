@@ -10,3 +10,4 @@ print(x.beta, y.gamma, z.alpha)
 del x.alpha, y.beta, z.gamma
 print(x.alpha, y.beta, z.gamma)
 print(x.beta, y.gamma, z.alpha)
+

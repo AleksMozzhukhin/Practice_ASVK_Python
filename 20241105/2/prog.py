@@ -76,4 +76,5 @@ class Triangle:
         return False
 
 
-eval(input())
+while s:=input():
+    exec(s)

@@ -10,3 +10,4 @@ del a.k, c.m
 print(a.i, a.j, b.j, b.k, c.k, c.n)
 a.k = b.i = c.m = 777
 print(a.i, a.j, a.k, b.j, b.k, c.k, c.n, c.m)
+

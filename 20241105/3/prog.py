@@ -98,5 +98,6 @@ class Maze:
         maze_rows = [''.join(row) for row in grid]
         return '\n'.join(maze_rows)
 
-eval(input())
+while s:=input():
+    exec(s)
 

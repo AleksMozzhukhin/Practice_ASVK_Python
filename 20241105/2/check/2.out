@@ -1,0 +1,4 @@
+outer(True):12.5 inner(True):0.5 separate(True):0.5 empty(False):0.0
+inner < outer=True, separate < outer=True, empty < outer=True
+inner in outer=True, separate in outer=False, empty in outer=True, outer in outer=True
+outer & inner=False, inner & separate=False, empty & outer=False, empty & separate=False

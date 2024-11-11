@@ -31,6 +31,7 @@ class Omnibus:
     def __str__(self):
         return f"Omnibus(set={self._attributes_set})"
 
-eval(input())
+while s:=input():
+    exec(s)
 
 

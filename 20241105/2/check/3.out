@@ -1,0 +1,4 @@
+t1(True):6.0 t2(True):6.0 t3(True):2.0 degenerate(False):0.0
+t1 < t2=False, t2 < t3=False, t1 < t3=False, t4 < t1=True
+t2 in t1=False, t3 in t1=False, t4 in t1=True, t1 in t2=False
+t1 & t2=True, t1 & t3=True, t2 & t3=True, t4 & t1=False
