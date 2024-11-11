@@ -1,0 +1,9 @@
+t1 = Triangle((0, 0), (4, 0), (2, 3))
+t2 = Triangle((2, 1), (6, 1), (4, 4))
+t3 = Triangle((2, 3), (4, 3), (3, 5))
+t4 = Triangle((1, 1), (2, 2), (3, 3))
+
+print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip(("t1","t2","t3","degenerate"), [t1, t2, t3, t4])))
+print(f"{t1 < t2=}, {t2 < t3=}, {t1 < t3=}, {t4 < t1=}")
+print(f"{t2 in t1=}, {t3 in t1=}, {t4 in t1=}, {t1 in t2=}")
+print(f"{t1 & t2=}, {t1 & t3=}, {t2 & t3=}, {t4 & t1=}")

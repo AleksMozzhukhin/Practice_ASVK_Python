@@ -1,0 +1,8 @@
+outer = Triangle((0, 0), (5, 0), (2.5, 5))
+inner = Triangle((1, 1), (2, 1), (1.5, 2))
+separate = Triangle((6, 6), (7, 6), (6.5, 7))
+empty = Triangle((1, 1), (2, 2), (3, 3))
+print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip(("outer", "inner", "separate", "empty"), [outer, inner, separate, empty])))
+print(f"{inner < outer=}, {separate < outer=}, {empty < outer=}")
+print(f"{inner in outer=}, {separate in outer=}, {empty in outer=}, {outer in outer=}")
+print(f"{outer & inner=}, {inner & separate=}, {empty & outer=}, {empty & separate=}")

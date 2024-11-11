@@ -1,0 +1,12 @@
+x, y, z = Omnibus(), Omnibus(), Omnibus()
+x.alpha = 10
+y.beta = 20
+z.gamma = 30
+print(x.alpha, y.beta, z.gamma)
+x.beta = 40
+y.gamma = 50
+z.alpha = 60
+print(x.beta, y.gamma, z.alpha)
+del x.alpha, y.beta, z.gamma
+print(x.alpha, y.beta, z.gamma)
+print(x.beta, y.gamma, z.alpha)

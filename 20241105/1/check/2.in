@@ -1,0 +1,10 @@
+m, n = Omnibus(), Omnibus()
+m.delta = 100
+n.delta = 200
+print(m.delta, n.delta)
+m.delta = 300
+print(m.delta, n.delta)
+del m.delta
+print(m.delta, n.delta)
+m.delta = 400
+print(m.delta, n.delta)
