@@ -1,0 +1,7 @@
+empty = DivStr()
+print(*empty // 1)
+print(empty % 1)
+print(*empty // 3)
+print(empty % 3)
+print(empty % 2 + DivStr("ing") + empty % 1)
+

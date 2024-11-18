@@ -1,0 +1,8 @@
+a = DivStr("Python-3.8_Release!")
+print(*a // 4)
+print(a % 4)
+print(*a % 10 // 3)
+print(a.lower() % 3)
+print(*a[0:12] // 5)
+print(a % 5 + DivStr() + a % 6)
+

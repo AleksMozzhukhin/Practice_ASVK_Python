@@ -1,0 +1,8 @@
+a = DivStr("HelloWorld")
+print(*a // 3)
+print(a % 3)
+print(*a % 7 // 2)
+print(a.upper() % 4)
+print(*a[2:8] // 2)
+print(a % 4 + DivStr() + a % 5)
+
