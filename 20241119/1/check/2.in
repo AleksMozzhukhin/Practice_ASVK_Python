@@ -1,0 +1,15 @@
+@objcount
+class CustomInitClass:
+    def __init__(self, value):
+        self.value = value
+def test_custom_init():
+    obj1 = CustomInitClass(10)
+    obj2 = CustomInitClass(20)
+    print(CustomInitClass.counter)
+    del obj1
+    print(CustomInitClass.counter)
+    del obj2
+    print(CustomInitClass.counter)
+test_custom_init()
+
+

@@ -1,0 +1,15 @@
+@objcount
+class TestClass:
+    pass
+def test_basic_functionality():
+    a = TestClass()
+    b = TestClass()
+    c = TestClass()
+    print(TestClass.counter)
+    del a
+    print(TestClass.counter)
+    del b
+    del c
+    print(TestClass.counter)
+test_basic_functionality()
+

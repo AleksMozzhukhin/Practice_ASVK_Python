@@ -1,0 +1,14 @@
+@objcount
+class CustomDelClass:
+    def __del__(self):
+        print(f"Object {self} deleted")
+obj1 = CustomDelClass()
+obj2 = CustomDelClass()
+obj3 = CustomDelClass()
+print(CustomDelClass.counter)
+del obj1
+print(CustomDelClass.counter)
+del obj2
+del obj3
+print(CustomDelClass.counter)
+

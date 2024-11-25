@@ -1,0 +1,10 @@
+class C:
+    num = Num()
+def test_string_and_sequences():
+    c = C()
+    d = C()
+    c.num = "qwerqwerqwer"
+    d.num = 7
+    print(c.num + d.num)
+test_string_and_sequences()
+

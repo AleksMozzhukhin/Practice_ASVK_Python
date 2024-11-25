@@ -1,0 +1,5 @@
+wo = Vowel(a=1, e=2, i=3, o=4, u=5, y=6)
+print(wo.full)
+wo.full = False
+print(wo.full)
+

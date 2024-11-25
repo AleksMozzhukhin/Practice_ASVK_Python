@@ -1,0 +1,10 @@
+class C:
+    num = Num()
+def test_range_and_real():
+    c = C()
+    d = C()
+    c.num = "qwerqwerqwer"
+    d.num = range(10, 1000, 7)
+    print(c.num + d.num)
+test_range_and_real()
+

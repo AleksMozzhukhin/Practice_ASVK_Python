@@ -1,0 +1,11 @@
+class C:
+    num = Num()
+def test_default_and_basic():
+    c = C()
+    d = C()
+    print(c.num)  # Ожидается 0 (значение по умолчанию)
+    c.num = 2
+    d.num = 2
+    print(c.num + d.num)  # Ожидается 4
+test_default_and_basic()
+
