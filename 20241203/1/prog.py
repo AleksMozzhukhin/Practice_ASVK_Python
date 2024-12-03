@@ -1,0 +1,1 @@
+type("C", (), {"var":100500, "__init__": lambda x: setattr("C", "var", x)} )
