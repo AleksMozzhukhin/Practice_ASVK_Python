@@ -1,0 +1,8 @@
+class Test2(metaclass=dump):
+    def __init__(self, value):
+        self.value = value
+    def multiply(self, x, multiplier=1):
+        return self.value * x * multiplier
+t = Test2(2)
+result = t.multiply(5, multiplier=3)
+assert result == 30, "Метод multiply должен вернуть произведение аргументов"

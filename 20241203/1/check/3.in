@@ -1,0 +1,14 @@
+class Test3(metaclass=dump):
+    def __init__(self, start):
+        self.value = start
+    def increment(self, amount):
+        self.value += amount
+        return self.value
+    def reset(self):
+        self.value = 0
+        return self.value
+t = Test3(10)
+result1 = t.increment(5)
+result2 = t.reset()
+assert result1 == 15, "Метод increment должен вернуть 15"
+assert result2 == 0, "Метод reset должен вернуть 0"

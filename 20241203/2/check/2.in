@@ -1,0 +1,3 @@
+store 10 x
+ifgt x 5 undefined_label
+out x

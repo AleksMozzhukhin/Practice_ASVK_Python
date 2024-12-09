@@ -1,0 +1,8 @@
+class Test1(metaclass=dump):
+    def __init__(self):
+        self.data = "test"
+    def no_params(self):
+        return "no parameters"
+t = Test1()
+result = t.no_params()
+assert result == "no parameters", "Метод no_params должен вернуть строку 'no parameters'"
