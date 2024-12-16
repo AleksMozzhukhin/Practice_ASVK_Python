@@ -1,0 +1,7 @@
+random.seed(42)
+A = random.choices(range(10), k=0)
+B = asyncio.run(main(A))
+print(*A)
+print(*B)
+print(B == sorted(A))
+

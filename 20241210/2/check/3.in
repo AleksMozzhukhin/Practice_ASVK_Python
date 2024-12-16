@@ -1,0 +1,6 @@
+A = list(range(10))
+B = asyncio.run(main(A))
+print(*A)
+print(*B)
+print(B == sorted(A))
+
