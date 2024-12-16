@@ -44,9 +44,8 @@ async def main(delay1, delay2, delay3, count):
         asyncio.create_task(reader(stack, count, delay3, event)),
     ]
 
-    await tasks[-1]  # Ждем завершения reader
+    await tasks[-1]
 
-    # Отмена остальных задач
     for task in tasks:
         if not task.done():
             task.cancel()

@@ -94,13 +94,7 @@ async def main(A):
     return final_sorted
 
 
-# t=""
-# while s:=input():
-#     t=t+s+"\n"
-# exec(t)
-random.seed(1337)
-A = random.choices(range(10), k=33)
-B = asyncio.run(main(A))
-print(*A)
-print(*B)
-print(B == sorted(A))
+t=""
+while s:=input():
+    t=t+s+"\n"
+exec(t)
