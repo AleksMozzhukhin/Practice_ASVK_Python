@@ -8,5 +8,4 @@ def sub_upgrade(a, b):
     else:
         return a - b
 
-
-print(sub_upgrade(["Q", "WE", "RTY"], ["WE", "ZZ"]))
+print(sub_upgrade(*eval(input())))

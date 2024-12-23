@@ -17,4 +17,6 @@ def calc(s, t, u):
 from math import *
 
 a, b, c = eval(input())
-num = int(input())
+num = eval(input())
+F=calc(a,b,c)
+print(F(num))
