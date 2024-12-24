@@ -1,3 +1,9 @@
+async def main(A):
+    tasks, B = await mtasks(A)
+    print(len(tasks))
+    random.shuffle(tasks)
+    await asyncio.gather(*tasks)
+    return B
 random.seed(42)
 A = random.choices(range(10), k=1)
 B = asyncio.run(main(A))

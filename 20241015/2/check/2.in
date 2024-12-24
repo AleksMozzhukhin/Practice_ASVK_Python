@@ -1,4 +1,6 @@
-:quote s "'{}'".format(s)
-quote "Hello, world"
-quote "It's a test"
-quit "Funcs: {}, Lines: {}"
+:sin x sin(x)
+sin 1
+:decorate s "--<<{}>>--".format(s)
+decorate "ЖЖЖ"
+sin 2
+quit "{}, {}"
