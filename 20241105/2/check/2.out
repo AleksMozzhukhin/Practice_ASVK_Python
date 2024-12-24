@@ -1,4 +1,4 @@
-outer(True):12.5 inner(True):0.5 separate(True):0.5 empty(False):0.0
-inner < outer=True, separate < outer=True, empty < outer=True
-inner in outer=True, separate in outer=False, empty in outer=True, outer in outer=True
-outer & inner=False, inner & separate=False, empty & outer=False, empty & separate=False
+a(True):0.5 b(True):0.5 c(True):1.0 d(True):0.5
+a < b=False, b < c=True, a < d=True, d < b=False
+a in b=False, b in c=False, a in c=False, d in c=False
+a & b=False, b & c=False, a & c=False, d & a=False

@@ -1,4 +1,4 @@
-t1(True):6.0 t2(True):6.0 t3(True):2.0 degenerate(False):0.0
-t1 < t2=False, t2 < t3=False, t1 < t3=False, t4 < t1=True
-t2 in t1=False, t3 in t1=False, t4 in t1=True, t1 in t2=False
-t1 & t2=True, t1 & t3=True, t2 & t3=True, t4 & t1=False
+a(True):0.5 b(True):0.5 c(True):1.0 d(True):0.5
+a < b=False, b < c=True, a < d=True, d < b=False
+a in b=False, b in c=False, a in c=False, d in c=False
+a & b=False, b & c=False, a & c=False, d & a=False
