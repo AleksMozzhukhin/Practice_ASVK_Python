@@ -1,13 +1,3 @@
-try:
-    wo = Vowel(a=1)
-    wo.answer = 100
-except AttributeError:
-    print("Cannot modify answer")
-try:
-    print(wo.o)
-except AttributeError:
-    print("Cannot read empty slot: o")
-try:
-    wo.z = 10
-except AttributeError:
-    print("Invalid slot: z")
+Cannot modify answer
+Cannot read empty slot: o
+Invalid slot: z

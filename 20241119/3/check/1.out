@@ -1,4 +1,2 @@
-wo = Vowel(y=22, a=12, i=3)
-print(wo, wo.full)
-wo.e = wo.o = wo.u = 100500
-print(wo, wo.full)
+a: 12 i: 3 y: 22 False
+a: 12 o: 100500 u: 100500 i: 3 e: 100500 y: 22 True
